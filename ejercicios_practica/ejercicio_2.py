@@ -13,6 +13,9 @@
 # para imprimir en pantalla todos los colores
 colores = ['rojo', 'naranja', 'verde', 'azul']
 
+for color in colores:
+    print('Este es el color:{}'.format(color))
+
 # Itere el "for" utilizando la lista como parámero
 # y utilizar como elemento del "for" cada color
 # for color ...
@@ -22,4 +25,8 @@ colores = ['rojo', 'naranja', 'verde', 'azul']
 # los elementos de la lista
 # for i ...
 
-print("terminamos!")
+for i in range (len(colores)):
+    print('N* {} es el color {}'.format(i,colores[i]))
+print("terminamos!") 
+
+ 
