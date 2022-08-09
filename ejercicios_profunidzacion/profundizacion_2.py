@@ -35,3 +35,32 @@ alguno de lo soportados o no es la palabra "FIN".
 
 print("Mi Calculadora (^_^)")
 # Empezar aquí la resolución del ejercicio
+
+
+op = input('Ingresa el tipo de operacion a realizar:\nSuma (+)\nResta (-)\nMultiplicación (*)\nDivisión (/)\nPara salir ingresa: FIN\nOperador: ')
+if op == 'fin':
+    op = 'FIN'
+
+while op != 'FIN':
+    primer_num = (int(input('Ingresa un numero entero: ')))
+    seg_num = (int(input('Ingresa un nuevo numero entero: ')))
+    
+
+    if op == '+':
+       resultado = primer_num + seg_num
+       print ('El resultado es {}'.format(resultado))
+    if op == '-':
+       resultado = primer_num - seg_num
+       print ('El resultado es {}'.format(resultado))
+    if op == '*':
+       resultado = primer_num * seg_num
+       print ('El resultado es {}'.format(resultado))
+    if op == '/':
+       resultado = primer_num / seg_num
+       print ('El resultado es {}'.format(resultado))
+    
+    if op =='+' or '-' or '/' or '*':
+        continue
+    else:
+        print ('Terminamos')
+        break

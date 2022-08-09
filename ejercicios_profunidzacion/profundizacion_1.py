@@ -39,3 +39,17 @@ print('Comenzamos a ponernos serios!')
 # promedio = sumatoria / cantidad_numeros
 
 # Imprimir resultado en pantalla
+
+inicio = int(input('Ingrese un numero para iniciar la secuencia: '))
+fin = int(input('ingrese un numero para finalizar la secuencia: '))
+
+cantidad_numeros = fin+1 - inicio
+sumatoria = 0
+
+
+for num in range (inicio,fin+1):
+   sumatoria +=num
+      
+promedio = sumatoria / cantidad_numeros
+print('Hay {} numeros en esta secuencia'.format(cantidad_numeros))
+print('El promedio total es {}'.format(promedio))
